@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "435801358841",
+    "firebase_url": "https://crashed-65ea3-default-rtdb.firebaseio.com",
+    "project_id": "crashed-65ea3",
+    "storage_bucket": "crashed-65ea3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435801358841:android:f31d565a0d501fc81bfd28",
+        "android_client_info": {
+          "package_name": "com.Crashed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435801358841-0a2343tsggdsi9csvo0r61k0u7nhp725.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhbq93HPn32qJzgxrJNPlBYRCwRqlRbAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435801358841-0a2343tsggdsi9csvo0r61k0u7nhp725.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
