@@ -23,6 +23,11 @@ MonoBehaviour:
     m_SerializedLabels:
     - Network
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c42fc61c7de0d4840a8946a3976578a3
+    m_Address: SceneCanvas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 87cb36d5aa7b1234f9903f9a849b779d, type: 2}
   m_SchemaSet:

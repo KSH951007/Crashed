@@ -4,15 +4,35 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private static GameManager instance;
+    private static AuthManager authManager;
+
+
+    public static AuthManager AuthManager { get => authManager; }
+    public static GameManager Instance { get { return instance; } }
+
+
+    private void Awake()
     {
-        
+        if (instance != null)
+        {
+            instance = null;
+            DestroyImmediate(gameObject);
+        }
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+        CreateManagers();
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void CreateManagers()
     {
-        
+        if (authManager == null)
+        {
+            GameObject authObject = new GameObject("AuthManager");
+            authObject.transform.parent = transform;
+            authManager = authObject.AddComponent<AuthManager>();
+        }
     }
+
 }
