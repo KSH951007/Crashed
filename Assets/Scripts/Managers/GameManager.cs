@@ -6,10 +6,11 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
     private static AuthManager authManager;
-
+    private static UIManager uiManager;
 
     public static AuthManager AuthManager { get => authManager; }
     public static GameManager Instance { get { return instance; } }
+    public static UIManager UiManager { get { return uiManager; } }
 
 
     private void Awake()
@@ -32,6 +33,12 @@ public class GameManager : MonoBehaviour
             GameObject authObject = new GameObject("AuthManager");
             authObject.transform.parent = transform;
             authManager = authObject.AddComponent<AuthManager>();
+        }
+        if (uiManager == null)
+        {
+            GameObject uiObject = new GameObject("UIManager");
+            uiObject.transform.parent = transform;
+            uiManager = uiObject.AddComponent<UIManager>();
         }
     }
 
