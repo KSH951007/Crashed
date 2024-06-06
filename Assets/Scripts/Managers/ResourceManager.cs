@@ -8,7 +8,6 @@ public class ResourceManager : MonoBehaviour
     public bool DownloadResource()
     {
 
-
         return true;
     }
 

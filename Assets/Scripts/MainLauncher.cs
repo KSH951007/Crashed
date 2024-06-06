@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using UnityEngine.UIElements;
 using System;
+using UnityEngine.AddressableAssets;
 public class MainLauncher : MonoBehaviour
 {
 
@@ -17,8 +18,6 @@ public class MainLauncher : MonoBehaviour
 
         AuthCheck();
     }
-
-
     private bool CheckNetworkConnected()
     {
         return NetworkInterface.GetIsNetworkAvailable();

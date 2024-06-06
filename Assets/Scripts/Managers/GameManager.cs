@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
     private static AuthManager authManager;
     private static UIManager uiManager;
 
-    public static AuthManager AuthManager { get => authManager; }
     public static GameManager Instance { get { return instance; } }
+    public static AuthManager AuthManager { get => authManager; }
     public static UIManager UiManager { get { return uiManager; } }
 
 
